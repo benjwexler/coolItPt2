@@ -66,7 +66,7 @@
     padding-top: 10px;
     font-size: 34px;
     padding-bottom: 10px;
-    animation: neonLogo .8s steps(5, start) 1;
+    /* animation: neonLogo .8s steps(5, start) 1; */
 
     /* margin-top: 15px; */
     /* float: right */
@@ -163,6 +163,8 @@
       /* width: 100%; */
       /* display: flex;
       flex */
+
+      
   }
 
   #youtubeVidContainer {
@@ -173,6 +175,7 @@
     max-width: 800px;
     width: 100%;
     margin-top: 25px;
+    
 
     height: 400px;
     /* animation-name: neonLogo;
@@ -202,8 +205,10 @@
       /* padding-bottom: 70px; */
       margin: auto;
       background: black;
-      /* margin-bottom: 120px; */
+    
   }
+
+ 
 
   #footer {
       height: 100px;
@@ -213,11 +218,17 @@
     margin: 0px;
     padding: 0px;
     border-top: 3px solid red;
-    /* border-bottom: 5px solid white; */
+    border-bottom: 3px solid white;
     position: absolute;
-    bottom: 0px;
+    bottom: -20px;
     transition: opacity 1s;
+   
   }
+
+  #margin {
+    height: 200px;
+    width: 100vw;
+}
 
   #newFooter {
     height: 100px;
@@ -234,6 +245,26 @@
   transition: opacity 1s;
 }
 
+#hidden{
+    height: 80px;
+    /* width: 100vw;
+    background: green; */
+    /* height: 100px; */
+    width: 100vw;
+    /* background: black; */
+    background: rgb(11, 11, 11);
+  margin: 0px;
+  padding: 0px;
+  border-top: 3px solid red;
+  border-bottom: 3px solid white;
+  /* position: absolute; */
+  /* bottom: 0px; */
+  transition: opacity 1s;
+  margin-top: 30px;
+  display: none;
+
+}
+
 
 
   @media only screen and (max-width: 415px)  {
@@ -241,8 +272,15 @@
         bottom: 0px;
         border-bottom: 5px solid white;
         border-bottom-right-radius: 5%;
-        border-bottom-left-radius: 5%
+        border-bottom-left-radius: 5%;
+
+        display: none;
     }
+
+    #hidden{
+        display: block;
+    }
+
     #youtubeVidContainer {
             height: 200px;
     }
@@ -253,7 +291,7 @@
     
   }
 
-  @media only screen and (max-height: 800px) and (min-width: 415px)  {
+  @media only screen and (max-height: 415px) {
     #footer {
             opacity: 0
     }
@@ -329,21 +367,3 @@ a:link {
     color: black;
   }
 
-  #hidden{
-      height: 80px;
-      /* width: 100vw;
-      background: green; */
-      /* height: 100px; */
-      width: 100vw;
-      /* background: black; */
-      background: rgb(11, 11, 11);
-    margin: 0px;
-    padding: 0px;
-    border-top: 3px solid red;
-    border-bottom: 3px solid white;
-    /* position: absolute; */
-    /* bottom: 0px; */
-    transition: opacity 1s;
-    margin-top: 30px;
-
-  }
