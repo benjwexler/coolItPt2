@@ -235,8 +235,78 @@
     
   }
 
-  @media only screen and (max-height: 800px) and (min-width: 414px)  {
+  @media only screen and (max-height: 800px) and (min-width: 415px)  {
     #footer {
             opacity: 0
     }
 }
+
+@media only screen and (max-width: 320px)  {
+    #footer {
+        height: 80px;
+    }
+
+    #header {
+        height: 100px; 
+    }
+
+    #coverArtPic {
+        min-width: 150px
+    }
+
+}
+
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+ #spotify:hover {
+    color: #1DB954
+  }
+
+  #soundcloud:hover {
+    color: #ff8800
+  }
+
+  a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+  /* #apple:hover {
+   
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-text-fill-color: black;
+  } */
+/* 
+  #apple:hover {
+    font-size: 72px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial; /* reset Font Awesome's display:inline-block */
+  
+
+  #apple:hover {
+    background: radial-gradient(#e66465, #9198e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+  
+}
+#youtube:hover {
+    color: red
+  }
+youtube
+  
+  /* selected link */
+  a:active {
+    color: black;
+  }
