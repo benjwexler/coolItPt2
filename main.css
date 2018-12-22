@@ -202,6 +202,7 @@
       /* padding-bottom: 70px; */
       margin: auto;
       background: black;
+      /* margin-bottom: 120px; */
   }
 
   #footer {
@@ -214,7 +215,7 @@
     border-top: 3px solid red;
     /* border-bottom: 5px solid white; */
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     transition: opacity 1s;
   }
 
@@ -235,7 +236,7 @@
 
 
 
-  @media only screen and (max-width: 500px)  {
+  @media only screen and (max-width: 415px)  {
     #footer {
         bottom: 0px;
         border-bottom: 5px solid white;
@@ -326,4 +327,23 @@ a:link {
   /* selected link */
   a:active {
     color: black;
+  }
+
+  #hidden{
+      height: 80px;
+      /* width: 100vw;
+      background: green; */
+      /* height: 100px; */
+      width: 100vw;
+      /* background: black; */
+      background: rgb(11, 11, 11);
+    margin: 0px;
+    padding: 0px;
+    border-top: 3px solid red;
+    border-bottom: 3px solid white;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    transition: opacity 1s;
+    margin-top: 30px;
+
   }
