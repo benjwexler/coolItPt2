@@ -49,9 +49,12 @@
 
 #header {
     width: 100vw;
+    /* max-width: 200px; */
+    /* border-bottom-left-radius: 10%; */
+
     height: 120px;
     background: rgb(11, 11, 11);
-    margin: 0px;
+    margin: auto;
     padding: 0px;
     border-bottom: 5px solid white;
     border-bottom: 5px solid red;
@@ -91,6 +94,7 @@
     width: 18%;
     height: 100%;
     min-width: 200px;
+    max-width: 80px;
  
     
    
@@ -193,9 +197,11 @@
   .fullWidth {
       height: auto;
       width: 80vw;
+      max-width: 800px;
       background: white;
-      padding-bottom: 70px;
+      /* padding-bottom: 70px; */
       margin: auto;
+      background: black;
   }
 
   #footer {
@@ -209,4 +215,28 @@
     /* border-bottom: 5px solid white; */
     position: absolute;
     bottom: 20px;
+    transition: opacity 1s;
   }
+
+  @media only screen and (max-width: 500px)  {
+    #footer {
+        bottom: 0px;
+        border-bottom: 5px solid white;
+        border-bottom-right-radius: 5%;
+        border-bottom-left-radius: 5%
+    }
+    #youtubeVidContainer {
+            height: 200px;
+    }
+
+    .fullWidth {
+        width: 90vw;
+    }
+    
+  }
+
+  @media only screen and (max-height: 800px) and (min-width: 414px)  {
+    #footer {
+            opacity: 0
+    }
+}
