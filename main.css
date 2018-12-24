@@ -1,5 +1,9 @@
 :root {
     --width: 100%;
+    --headerHeight: 120px;
+    --iconsHeight: 75px;
+    --footerHeight: 100px;
+    --outNowHeight: 45px;
   }
 
   *{
@@ -114,6 +118,7 @@
     border: 1px solid black;
     border-left: 0px;
     border-right: 0px;
+    height: auto;
 }
 
 
@@ -380,10 +385,20 @@ a:link {
 }
 
 @media only screen and (min-width: 1920px) and (min-height: 1080px) {
+   .fullWidth{
+       height: calc(100vh - 350px);
+       /* height: calc(100vh - 321px); */
+       /* height: calc(100vh - (var(--headerHeight) + var(--iconsHeight) + var(--footerHeight) + var(--outNowHeight))) */
    
+   }
 
     #youtubeVidContainer {
-        height: 700px;
+        /* height: 700px;/ */
+       
+        height: 100%;
+        margin-top: 0px;
     }
+
+   
 }
 
