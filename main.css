@@ -296,11 +296,7 @@
     
   }
 
-  @media only screen and (max-height: 415px) {
-    #footer {
-            opacity: 0
-    }
-}
+ 
 
 @media only screen and (max-width: 320px)  {
     #footer {
@@ -401,4 +397,17 @@ a:link {
 
    
 }
+
+@media only screen and (max-height: 415px) {
+    #footer {
+            opacity: 0
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    #footer {
+            opacity: 0
+    }
+}
+
 
